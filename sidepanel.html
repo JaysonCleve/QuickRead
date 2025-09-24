@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+<title>Quickread AI</title>
+</head>
+<body>
+<header>
+<img src="icons/icon32.png" alt="Quickread AI" />
+<h1>Quickread AI</h1>
+</header>
+
+
+<section id="controls">
+<div class="row">
+<button id="btnSummarize">Seite/Auswahl zusammenfassen</button>
+<select id="summaryStyle">
+<option value="key-points">Stichpunkte</option>
+<option value="headline">Headlines</option>
+<option value="teaser">Kurzfassung</option>
+</select>
+<select id="summaryLength">
+<option value="short">Kurz</option>
+<option value="medium" selected>Mittel</option>
+<option value="long">Lang</option>
+</select>
+</div>
+
+
+<div class="row">
+<button id="btnTranslate">Auswahl übersetzen</button>
+<select id="targetLang">
+<option value="de" selected>Deutsch</option>
+<option value="en">English</option>
+<option value="fr">Français</option>
+<option value="es">Español</option>
+<option value="it">Italiano</option>
+<option value="nl">Nederlands</option>
+<option value="pl">Polski</option>
+<option value="pt">Português</option>
+</select>
+</div>
+</section>
+
+
+<section id="status"></section>
+<progress id="progress" max="1" value="0" style="width:100%; display:none"></progress>
+<section id="input"></section>
+<section id="output"></section>
+
+
+<script type="module" src="sidepanel.js"></script>
+</body>
+</html>
